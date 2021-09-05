@@ -38,6 +38,8 @@ export default function ContactForm() {
 
     if (findByName(name)) {
       alert(`${name} is already in contacts!`);
+      setName('');
+      setNumber('');
       return;
     }
 
